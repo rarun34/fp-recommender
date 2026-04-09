@@ -8,7 +8,6 @@ from helpers import (
     get_shared_attributes,
 )
 
-
 BANNER = r"""
  ___  ___  ___  ___  ___  ___  ___  ___  ___  ___  ___  ___
 |   ||   ||   ||   ||   ||   ||   ||   ||   ||   ||   ||   |
@@ -18,7 +17,6 @@ BANNER = r"""
   Narrative-Based Content Recommendation System
   Discover books & movies that *feel* like the ones you love.
 """
-
 
 def main():
     print(BANNER)
@@ -40,7 +38,6 @@ def main():
     display_recommendations(results, liked)
 
     print("\nThanks for using the Narrative Recommender. Enjoy!")
-
 
 def gather_likes(database):
     liked = []
@@ -75,7 +72,6 @@ def gather_likes(database):
             handle_search(user_input, database, liked)
 
     return liked
-
 
 def print_catalog(database):
     books = [i for i in database if i["type"] == "book"]
