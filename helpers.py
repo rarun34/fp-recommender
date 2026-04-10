@@ -8,4 +8,6 @@ def load_data(filepath="data.json"):
     with open(filepath, "r") as f:
         return json.load(f)
 
-def collect
+def collect_all_features(database):
+    features = set()
+    for item in get
