@@ -10,4 +10,6 @@ def load_data(filepath="data.json"):
 
 def collect_all_features(database):
     features = set()
-    for item in get
+    for item in databse:
+        for g in item.get("genres", []):
+            features.add(f"genre)
