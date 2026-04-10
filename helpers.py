@@ -4,4 +4,8 @@ import os
 
 def load_data(filepath="data.json"):
     if not os.path.exists(filepath):
-        raise FileNotFoundError
+        raise FileNotFoundError(f"Data file '{filepath}' not found.")
+    with open(filepath, "r") as f:
+        return json.load(f)
+
+def collect
